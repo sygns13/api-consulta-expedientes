@@ -20,8 +20,8 @@ public class ExpedienteAlimentos {
 
     private String secuencia1;
     private Integer anio;
-    private Integer numero1;
-    private Integer numero2;
+    private String numero1;
+    private String numero2;
     private String secuencia2;
     private String secuencia3;
     private String secuencia4;
@@ -34,7 +34,7 @@ public class ExpedienteAlimentos {
     }
 
 
-    public ExpedienteAlimentos(String numeroExpediente, String secuencia1, Integer anio, Integer numero1, Integer numero2, String secuencia2, String secuencia3, String secuencia4, CabExpedienteDTO datosExpediente, List<PartesExpedienteDTO> partesExpediente) {
+    public ExpedienteAlimentos(String numeroExpediente, String secuencia1, Integer anio, String numero1, String numero2, String secuencia2, String secuencia3, String secuencia4, CabExpedienteDTO datosExpediente, List<PartesExpedienteDTO> partesExpediente) {
         this.numeroExpediente = numeroExpediente;
         this.secuencia1 = secuencia1;
         this.anio = anio;
@@ -71,19 +71,19 @@ public class ExpedienteAlimentos {
         this.anio = anio;
     }
 
-    public Integer getNumero1() {
+    public String getNumero1() {
         return numero1;
     }
 
-    public void setNumero1(Integer numero1) {
+    public void setNumero1(String numero1) {
         this.numero1 = numero1;
     }
 
-    public Integer getNumero2() {
+    public String getNumero2() {
         return numero2;
     }
 
-    public void setNumero2(Integer numero2) {
+    public void setNumero2(String numero2) {
         this.numero2 = numero2;
     }
 

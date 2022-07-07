@@ -51,7 +51,7 @@ public class ConsultaExpedienteController {
     }
 
     @GetMapping("/buscarcabexpediente/{numeroExpediente}")
-    public ResponseEntity<CabExpedienteDTO> buscarPorNUnico(@PathVariable("numeroExpediente") String numeroExpediente) throws Exception{
+    public ResponseEntity<CabExpedienteDTO> buscarPorExpediente(@PathVariable("numeroExpediente") String numeroExpediente) throws Exception{
 
         CabExpedienteDTO expediente = expedienteService.findByNumeroExpediente(numeroExpediente);
         if(expediente == null) {

@@ -30,13 +30,15 @@ public class ConsultaExpedienteServiceImpl implements ConsultaExpedienteService 
             throw new ModeloNotFoundException("No se encontró el expediente");
         }
 
+        String []parts = expediente.getNumeroExpediente().split("-");
+
         List<PartesExpedienteDTO> partesExpedienteDTO = expedienteDAO.findPartesByNumeroExpediente(expediente.getNumeroExpediente());
 
         ExpedienteAlimentos expedienteAlimentos = new ExpedienteAlimentos();
         expedienteAlimentos.setNumeroExpediente(expediente.getNumeroExpediente());
         expedienteAlimentos.setAnio(expediente.getAnio());
-        expedienteAlimentos.setNumero1(expediente.getNumero1());
-        expedienteAlimentos.setNumero2(expediente.getNumero2());
+        expedienteAlimentos.setNumero1(parts[2]);
+        expedienteAlimentos.setNumero2(parts[3]);
         expedienteAlimentos.setSecuencia1(expediente.getSecuencia1());
         expedienteAlimentos.setSecuencia2(expediente.getSecuencia2());
         expedienteAlimentos.setSecuencia3(expediente.getSecuencia3());
