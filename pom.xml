@@ -12,8 +12,8 @@
 	<artifactId>api-consulta-expedientes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>api-consulta-expedientes</name>
-	<description>API de Consulta de expedientes del Poder Judicial</description>
+	<name>aptes</name>
+	<description>API de Consulta de expedientes del Poder Jui-consulta-expediendicial</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
